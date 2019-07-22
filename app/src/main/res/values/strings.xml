@@ -1,3 +1,32 @@
 <resources>
     <string name="app_name">Field Commander Napoleon</string>
+    <string name="event_1">If Napoleon is not present, select 1 Insight</string>
+    <string name="event_2">You gain 2 Supply points</string>
+    <string name="event_3">You gain 1 Scout</string>
+    <string name="event_4">Pay 2 Supply points to add any 1 French Recruit to any 1 French occupied Area</string>
+    <string name="event_5">You may move Napoleon to this Battle from another Area</string>
+    <string name="event_6">You may move 1 Mobile French Force to this Battle</string>
+    <string name="event_7">Transfer 2 of the Enemy’s Supply points to You</string>
+    <string name="event_8">Transfer 2 of your Supply points to the Enemy</string>
+    <string name="event_9">Inflict 1 Hit on your Forces in 1 random French</string>
+    <string name="event_10">Add 1 Enemy Reinforcement to the Battle</string>
+    <string name="event_11">Add 1 Enemy Garrison to the Battle</string>
+    <string name="event_12">Enemy gains +1 Battle Plan</string>
+    <string name="event_1_more">If Napoleon is not in the Battle Area, you can choose 1 Insight counter to use during the Battle. This Insight does not reduce your Battle Plan Quantity. If the Insight requires an Activation roll, use the Command</string>
+    <string name="event_2_more">Immediately add 2 Supply points to your French Supply box.</string>
+    <string name="event_3_more">Immediately add 1 Scout counter to the Scout box on the Help Sheet.</string>
+    <string name="event_4_more">If you pay 2 Supply points, add 1 of your currently unpurchased Recruits to any Area containing French Forces. If you cannot add a Force, or do not pay the 2 Supply points, disregard this Event.</string>
+    <string name="event_5_more">If Napoleon is not in the Battle Area, and he is present in another Area on the Campaign map, you can move him to this Battle Area. If he is not present on the Campaign map, disregard this event.</string>
+    <string name="event_6_more">You may move 1 of your Mobile Forces on the Campaign map to the Battle Area. You may not move the Napoleon counter.</string>
+    <string name="event_7_more">Immediately transfer up to 2 of the Enemy’s Supply points to your French Supply pile. If the Enemy has only 1 Supply point, transfer it to you. If the Enemy has no Supply points, disregard this event.</string>
+    <string name="event_8_more">Immediately transfer up to 2 of your Supply points to the Enemy Supply pile. If you have only 1 Supply point, transfer it to the Enemy. If you have no Supply points, disregard this event.</string>
+    <string name="event_9_more">Randomly select a City Area containing French Forces. Inflict 1 Hit on any one of your Forces in that Area. If you do not have any Forces in Cities, disregard this Event.</string>
+    <string name="event_10_more">Immediately draw 1 Enemy Reinforcement from the Reinforcement cup and add it to the Battle. If the cup is empty, give the Enemy 2 Supply points instead.</string>
+    <string name="event_11_more">Add 1 Enemy Garrison to the Enemy Approach Area of the Battlefield Sheet. If the Garrison survives the Battle, place it on the Campaign map in the Area the Battle took place. If you cannot add a Garrison, give the Enemy 2 Supply points instead.</string>
+    <string name="event_12_more">Increase the Enemy Battle Plan Quantity counter’s value by 1.</string>
+    <string name="result">Result: %d - %d Battle Turns</string>
+    <string name="new_supp_points">New Enemy Supply Points: %d</string>
+    <string name="enemy_supply_points">Enemy Supply Points</string>
+    <string name="calculate_result">Calculate result</string>
+
 </resources>
