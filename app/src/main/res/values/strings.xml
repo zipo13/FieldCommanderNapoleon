@@ -39,7 +39,7 @@
     <string name="battle_rounds">Battle Rounds</string>
     <string name="envelopment_check">Envelopment Check</string>
     <string name="envelopment_result">Envelopment result</string>
-    <string name="army_force">Army force</string>
+    <string name="army_force">Army Force</string>
     <string name="enter_force_size">Please enter both force sizes to determine envelopment</string>
     <string name="force_size_0">Force size cannot be 0</string>
     <string name="french_envelop">The French forces has enveloped the enemy\'s army\nNo battle shall take place</string>

@@ -7,7 +7,6 @@
     tools:context=".MainActivity"
     android:background="@drawable/nap_bg">
 
-
     <ImageView
         android:id="@+id/fog_of_war"
         android:layout_width="match_parent"
@@ -52,8 +51,8 @@
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
             android:ems="2"
+            android:gravity="center"
             android:digits="0123456789"
-            android:autofillHints="@null"
             android:maxLength="2"
             android:inputType="numberDecimal"
             android:textSize="22sp"
@@ -213,8 +212,6 @@
                 android:text="@string/new_supp_points"
                 style="@style/AppTextSml"/>
 
-
-
             <il.co.woo.fieldcommandernapoleon.FontTextView
                 android:id="@+id/new_enemy_supply_points"
                 android:layout_width="match_parent"
@@ -271,11 +268,11 @@
             android:layout_marginStart="8dp"
             android:layout_marginLeft="8dp"
             android:layout_weight="4"
-            android:autofillHints="@null"
-            android:contentDescription="@string/army_force"
             android:digits="0123456789"
             android:drawableLeft="@drawable/french_flag"
+            android:drawableStart="@drawable/french_flag"
             android:drawablePadding="8dp"
+            android:gravity="center"
             android:hint="@string/army_force"
             android:inputType="numberDecimal"
             android:maxLength="3"
@@ -298,11 +295,11 @@
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
             android:layout_weight="4"
-            android:autofillHints="@null"
-            android:contentDescription="@string/army_force"
             android:digits="0123456789"
             android:drawableLeft="@drawable/brit_flag"
+            android:drawableStart="@drawable/brit_flag"
             android:drawablePadding="8dp"
+            android:gravity="center"
             android:hint="@string/army_force"
             android:inputType="numberDecimal"
             android:maxLength="3"
@@ -321,7 +318,8 @@
             android:id="@+id/envelop_bg"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:scaleType="fitXY"/>
+            android:scaleType="fitXY"
+            android:contentDescription="@null"/>
 
         <il.co.woo.fieldcommandernapoleon.FontTextView
             android:id="@+id/env_result"
@@ -336,8 +334,5 @@
             style="@style/AppText"
             tools:text="You must fight" />
 
-
     </FrameLayout>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
