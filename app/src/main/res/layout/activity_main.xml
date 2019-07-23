@@ -61,7 +61,7 @@
     </LinearLayout>
 
     <ImageButton
-        android:id="@+id/d10"
+        android:id="@+id/d10_button"
         android:layout_width="70dp"
         android:layout_height="0dp"
         app:layout_constraintDimensionRatio="1:1"
@@ -97,7 +97,7 @@
             tools:text="Pay 2 Supply points to add any 1 French Recruit to any 1 French occupied Area" />
 
         <ImageButton
-            android:id="@+id/res_info"
+            android:id="@+id/res_info_button"
             android:layout_width="0dp"
             android:layout_height="30dp"
             android:layout_weight="1"
@@ -118,7 +118,7 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/d10">
+        app:layout_constraintTop_toBottomOf="@+id/d10_button">
 
         <LinearLayout
             android:layout_width="0dp"
@@ -280,7 +280,7 @@
             android:typeface="monospace" />
 
         <ImageButton
-            android:id="@+id/fight"
+            android:id="@+id/fight_button"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:background="@android:color/transparent"
@@ -335,4 +335,17 @@
             tools:text="You must fight" />
 
     </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/cc_button"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="2dp"
+        android:scaleType="fitXY"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/cc" />
 </androidx.constraintlayout.widget.ConstraintLayout>

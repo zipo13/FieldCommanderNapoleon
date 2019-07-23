@@ -34,12 +34,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ImageButton calculateButton = findViewById(R.id.d10);
-        ImageButton fightButton = findViewById(R.id.fight);
+        ImageButton calculateButton = findViewById(R.id.d10_button);
+        ImageButton fightButton = findViewById(R.id.fight_button);
+        ImageButton ccButton = findViewById(R.id.cc_button);
         mDiceRollMediaPlayer = MediaPlayer.create(this,R.raw.dice_roll);
         mSwordClingMediaPlayer = MediaPlayer.create(this,R.raw.swords_collide);
 
-        final ImageButton resInfoImageButton = findViewById(R.id.res_info);
+        final ImageButton resInfoImageButton = findViewById(R.id.res_info_button);
         final FontTextView rollResultTextView = findViewById(R.id.roll_result);
         final FontTextView battleRoundsTextView = findViewById(R.id.battle_rounds);
         final FontTextView newSuppPointsTextView = findViewById(R.id.new_enemy_supply_points);
@@ -180,6 +181,25 @@ public class MainActivity extends AppCompatActivity {
                 }
 
 
+            }
+        });
+
+        ccButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String credits = getResources().getString(R.string.no_affiliation)
+                        + "\n\n"
+                        + getResources().getString(R.string.dice_icon_credit)
+                        + "\n\n"
+                        + getResources().getString(R.string.sound_credit);
+
+
+                //create an OK dialog box with the string
+                AlertDialog.Builder builder = new AlertDialog.Builder(new ContextThemeWrapper(MainActivity.this,R.style.AlertDialogTheme));
+                builder.setMessage(credits)
+                        .setPositiveButton("OK", null)
+                        .setCancelable(false)
+                        .show();
             }
         });
     }

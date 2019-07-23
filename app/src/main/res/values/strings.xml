@@ -45,4 +45,8 @@
     <string name="french_envelop">The French forces has enveloped the enemy\'s army\nNo battle shall take place</string>
     <string name="enemy_envelop">The enemy forces has enveloped the French army\nNo battle shall take place</string>
     <string name="no_envelop">No army is strong enough to envelop the other\nYou must battle</string>
+    <string name="no_affiliation">The app developer has no affiliation with \u0022Field Commander: Napoleon\u0022 board game creators nor with DVG games.</string>
+    <string name="dice_icon_credit">Dice icon by https://game-icons.net/ are under CC 3.0 license</string>
+    <string name="sound_credit">Sound effects by http://soundbible.com are under CC 3.0 license</string>
+
 </resources>
