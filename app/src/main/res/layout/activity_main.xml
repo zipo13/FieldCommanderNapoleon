@@ -28,7 +28,6 @@
         android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/fog_of_war">
@@ -39,7 +38,6 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginLeft="8dp"
-            android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
             android:text="@string/enemy_supply_points"
@@ -51,12 +49,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginLeft="8dp"
-            android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
             android:ems="2"
             android:digits="0123456789"
-            android:hint="@null"
             android:autofillHints="@null"
             android:maxLength="2"
             android:inputType="numberDecimal"
@@ -67,14 +63,9 @@
 
     <ImageButton
         android:id="@+id/d10"
-        android:layout_width="80dp"
+        android:layout_width="70dp"
         android:layout_height="0dp"
         app:layout_constraintDimensionRatio="1:1"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
@@ -82,20 +73,6 @@
         android:scaleType="fitXY"
         android:background="@android:color/transparent"
         android:contentDescription="@string/calculate_result"/>
-
-    <il.co.woo.fieldcommandernapoleon.FontTextView
-        android:id="@+id/result"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        tools:text="Result: 11 - 4 Battle Turns"
-        style="@style/AppText"
-        app:layout_constraintTop_toBottomOf="@+id/d10"
-        app:layout_constraintLeft_toLeftOf="parent"/>
 
     <LinearLayout
         android:id="@+id/res_details_layout"
@@ -109,7 +86,7 @@
         android:layout_marginRight="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/result">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
         <il.co.woo.fieldcommandernapoleon.FontTextView
             android:id="@+id/res_details"
@@ -117,7 +94,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="7"
             android:text=""
-            style="@style/AppText"
+            style="@style/AppTextSml"
             tools:text="Pay 2 Supply points to add any 1 French Recruit to any 1 French occupied Area" />
 
         <ImageButton
@@ -132,23 +109,235 @@
             android:contentDescription="@null"/>
     </LinearLayout>
 
-
-    <il.co.woo.fieldcommandernapoleon.FontTextView
-        android:id="@+id/new_supply_points"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:text=""
-        style="@style/AppText"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/res_details_layout"
-        tools:text="New Enemy Supply Points: 6"/>
+        app:layout_constraintTop_toBottomOf="@+id/d10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <il.co.woo.fieldcommandernapoleon.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="@string/roll_result"
+                style="@style/AppTextSml"/>
+
+            <TextView
+                android:layout_height="0dip"
+                android:layout_width="fill_parent"
+                android:layout_weight="1" />
+
+            <il.co.woo.fieldcommandernapoleon.FontTextView
+                android:id="@+id/roll_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                tools:text="0"
+                style="@style/AppText"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/holo_red_dark">
+        </View>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
 
 
+            <il.co.woo.fieldcommandernapoleon.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="@string/battle_rounds"
+                style="@style/AppTextSml"/>
+
+            <TextView
+                android:layout_height="0dip"
+                android:layout_width="fill_parent"
+                android:layout_weight="1" />
+
+            <il.co.woo.fieldcommandernapoleon.FontTextView
+                android:id="@+id/battle_rounds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                tools:text="0"
+                style="@style/AppText"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/holo_red_dark">
+        </View>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <il.co.woo.fieldcommandernapoleon.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="@string/new_supp_points"
+                style="@style/AppTextSml"/>
+
+
+
+            <il.co.woo.fieldcommandernapoleon.FontTextView
+                android:id="@+id/new_enemy_supply_points"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                tools:text="0"
+                style="@style/AppText"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/bottom_separator"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/holo_red_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/res_details_layout">
+
+    </View>
+
+    <il.co.woo.fieldcommandernapoleon.FontTextView
+        android:id="@+id/env_check_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/envelopment_check"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottom_separator"
+        style="@style/AppText" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/env_check_title">
+
+        <EditText
+            android:id="@+id/french_force"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="4"
+            android:autofillHints="@null"
+            android:contentDescription="@string/army_force"
+            android:digits="0123456789"
+            android:drawableLeft="@drawable/french_flag"
+            android:drawablePadding="8dp"
+            android:hint="@string/army_force"
+            android:inputType="numberDecimal"
+            android:maxLength="3"
+            android:textSize="18sp"
+            android:typeface="monospace" />
+
+        <ImageButton
+            android:id="@+id/fight"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/envelopment_result"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/crossed_swords" />
+
+        <EditText
+            android:id="@+id/enemy_force"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="4"
+            android:autofillHints="@null"
+            android:contentDescription="@string/army_force"
+            android:digits="0123456789"
+            android:drawableLeft="@drawable/brit_flag"
+            android:drawablePadding="8dp"
+            android:hint="@string/army_force"
+            android:inputType="numberDecimal"
+            android:maxLength="3"
+            android:textSize="18sp"
+            android:typeface="monospace" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <ImageView
+            android:id="@+id/envelop_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+
+        <il.co.woo.fieldcommandernapoleon.FontTextView
+            android:id="@+id/env_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text=""
+            android:gravity="center_horizontal"
+            style="@style/AppText"
+            tools:text="You must fight" />
+
+
+    </FrameLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

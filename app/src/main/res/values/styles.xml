@@ -35,6 +35,12 @@
         <item name="android:shadowDy">2</item>
     </style>
 
+    <style name="AppTextSml" parent="AppText">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+
+
 
 
 </resources>

@@ -30,12 +30,19 @@
     <string name="event_14_more">Increase the Enemy Battle Plan Quantity counter’s value by 1.</string>
     <string name="event" translatable="false">event_%d</string>
     <string name="event_more" translatable="false">event_%d_more</string>
-    <string name="result">Result: %d -> %d Battle Turns</string>
-    <string name="new_supp_points">New Enemy Supply Points: %d</string>
+    <string name="new_supp_points">New Enemy Supply Points</string>
     <string name="enemy_supply_points">Enemy Supply Points</string>
     <string name="calculate_result">Calculate result</string>
-    <string name="new_supply_points">New Enemy Supply Points: %d</string>
     <string name="supply_points_unchanged">No Change To Enemy Supply Points</string>
     <string name="enter_supply_points">Enter enemy supply points first</string>
-
+    <string name="roll_result">Roll Result</string>
+    <string name="battle_rounds">Battle Rounds</string>
+    <string name="envelopment_check">Envelopment Check</string>
+    <string name="envelopment_result">Envelopment result</string>
+    <string name="army_force">Army force</string>
+    <string name="enter_force_size">Please enter both force sizes to determine envelopment</string>
+    <string name="force_size_0">Force size cannot be 0</string>
+    <string name="french_envelop">The French forces has enveloped the enemy\'s army\nNo battle shall take place</string>
+    <string name="enemy_envelop">The enemy forces has enveloped the French army\nNo battle shall take place</string>
+    <string name="no_envelop">No army is strong enough to envelop the other\nYou must battle</string>
 </resources>
