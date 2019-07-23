@@ -11,7 +11,9 @@
     <string name="event_9">Inflict 1 Hit on your Forces in 1 random French</string>
     <string name="event_10">Add 1 Enemy Reinforcement to the Battle</string>
     <string name="event_11">Add 1 Enemy Garrison to the Battle</string>
-    <string name="event_12">Enemy gains +1 Battle Plan</string>
+    <string name="event_12">Add 1 Enemy Garrison to the Battle</string>
+    <string name="event_13">Enemy gains +1 Battle Plan</string>
+    <string name="event_14">Enemy gains +1 Battle Plan</string>
     <string name="event_1_more">If Napoleon is not in the Battle Area, you can choose 1 Insight counter to use during the Battle. This Insight does not reduce your Battle Plan Quantity. If the Insight requires an Activation roll, use the Command</string>
     <string name="event_2_more">Immediately add 2 Supply points to your French Supply box.</string>
     <string name="event_3_more">Immediately add 1 Scout counter to the Scout box on the Help Sheet.</string>
@@ -23,10 +25,17 @@
     <string name="event_9_more">Randomly select a City Area containing French Forces. Inflict 1 Hit on any one of your Forces in that Area. If you do not have any Forces in Cities, disregard this Event.</string>
     <string name="event_10_more">Immediately draw 1 Enemy Reinforcement from the Reinforcement cup and add it to the Battle. If the cup is empty, give the Enemy 2 Supply points instead.</string>
     <string name="event_11_more">Add 1 Enemy Garrison to the Enemy Approach Area of the Battlefield Sheet. If the Garrison survives the Battle, place it on the Campaign map in the Area the Battle took place. If you cannot add a Garrison, give the Enemy 2 Supply points instead.</string>
-    <string name="event_12_more">Increase the Enemy Battle Plan Quantity counter’s value by 1.</string>
-    <string name="result">Result: %d - %d Battle Turns</string>
+    <string name="event_12_more">Add 1 Enemy Garrison to the Enemy Approach Area of the Battlefield Sheet. If the Garrison survives the Battle, place it on the Campaign map in the Area the Battle took place. If you cannot add a Garrison, give the Enemy 2 Supply points instead.</string>
+    <string name="event_13_more">Increase the Enemy Battle Plan Quantity counter’s value by 1.</string>
+    <string name="event_14_more">Increase the Enemy Battle Plan Quantity counter’s value by 1.</string>
+    <string name="event" translatable="false">event_%d</string>
+    <string name="event_more" translatable="false">event_%d_more</string>
+    <string name="result">Result: %d -> %d Battle Turns</string>
     <string name="new_supp_points">New Enemy Supply Points: %d</string>
     <string name="enemy_supply_points">Enemy Supply Points</string>
     <string name="calculate_result">Calculate result</string>
+    <string name="new_supply_points">New Enemy Supply Points: %d</string>
+    <string name="supply_points_unchanged">No Change To Enemy Supply Points</string>
+    <string name="enter_supply_points">Enter enemy supply points first</string>
 
 </resources>
